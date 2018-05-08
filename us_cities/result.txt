@@ -1,0 +1,674 @@
+2018-03-07 18:11:17 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: us_cities)
+2018-03-07 18:11:17 [scrapy.utils.log] INFO: Versions: lxml 4.1.0.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.3 |Anaconda custom (64-bit)| (default, Oct 15 2017, 03:27:45) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.2.0 (OpenSSL 1.0.2n  7 Dec 2017), cryptography 2.0.3, Platform Windows-7-6.1.7601-SP1
+2018-03-07 18:11:17 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'us_cities', 'NEWSPIDER_MODULE': 'us_cities.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['us_cities.spiders']}
+2018-03-07 18:11:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2018-03-07 18:11:17 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-07 18:11:17 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-07 18:11:17 [scrapy.middleware] INFO: Enabled item pipelines:
+['us_cities.pipelines.UsCitiesPipeline']
+2018-03-07 18:11:17 [scrapy.core.engine] INFO: Spider opened
+2018-03-07 18:11:17 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-07 18:11:17 [py.warnings] WARNING: C:\Users\user\Anaconda3\lib\site-packages\scrapy\spidermiddlewares\offsite.py:59: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry http://en.wikipedia.org in allowed_domains.
+  warnings.warn("allowed_domains accepts only domains, not URLs. Ignoring URL entry %s in allowed_domains." % domain, URLWarning)
+
+2018-03-07 18:11:17 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-07 18:11:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://en.wikipedia.org/robots.txt> from <GET http://en.wikipedia.org/robots.txt>
+2018-03-07 18:11:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://en.wikipedia.org/robots.txt> (referer: None)
+2018-03-07 18:11:18 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population> from <GET http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+2018-03-07 18:11:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population> (referer: None)
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '1', 'city': 'New York', 'state': 'New York'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '2', 'city': 'Los Angeles', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '3', 'city': 'Chicago', 'state': 'Illinois'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '4', 'city': 'Houston', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '5', 'city': 'Phoenix', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '6', 'city': 'Philadelphia', 'state': 'Pennsylvania'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '7', 'city': 'San Antonio', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '8', 'city': 'San Diego', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '9', 'city': 'Dallas', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '10', 'city': 'San Jose', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '11', 'city': 'Austin', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '12', 'city': 'Jacksonville', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '13', 'city': 'San Francisco', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '14', 'city': 'Columbus', 'state': 'Ohio'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '15', 'city': 'Indianapolis', 'state': 'Indiana'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '16', 'city': 'Fort Worth', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '17', 'city': 'Charlotte', 'state': 'North Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '18', 'city': 'Seattle', 'state': 'Washington'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '19', 'city': 'Denver', 'state': 'Colorado'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '20', 'city': 'El Paso', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '21', 'city': 'Washington', 'state': 'District of Columbia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '22', 'city': 'Boston', 'state': 'Massachusetts'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '23', 'city': 'Detroit', 'state': 'Michigan'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '24', 'city': 'Nashville', 'state': 'Tennessee'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '25', 'city': 'Memphis', 'state': 'Tennessee'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '26', 'city': 'Portland', 'state': 'Oregon'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '27', 'city': 'Oklahoma City', 'state': 'Oklahoma'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '28', 'city': 'Las Vegas', 'state': 'Nevada'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '29', 'city': 'Louisville', 'state': 'Kentucky'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '30', 'city': 'Baltimore', 'state': 'Maryland'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '31', 'city': 'Milwaukee', 'state': 'Wisconsin'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '32', 'city': 'Albuquerque', 'state': 'New Mexico'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '33', 'city': 'Tucson', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '34', 'city': 'Fresno', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '35', 'city': 'Sacramento', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '36', 'city': 'Mesa', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '37', 'city': 'Kansas City', 'state': 'Missouri'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '38', 'city': 'Atlanta', 'state': 'Georgia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '39', 'city': 'Long Beach', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '40', 'city': 'Colorado Springs', 'state': 'Colorado'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '41', 'city': 'Raleigh', 'state': 'North Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '42', 'city': 'Miami', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '43', 'city': 'Virginia Beach', 'state': 'Virginia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '44', 'city': 'Omaha', 'state': 'Nebraska'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '45', 'city': 'Oakland', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '46', 'city': 'Minneapolis', 'state': 'Minnesota'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '47', 'city': 'Tulsa', 'state': 'Oklahoma'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '48', 'city': 'Arlington', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '49', 'city': 'New Orleans', 'state': 'Louisiana'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '50', 'city': 'Wichita', 'state': 'Kansas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '51', 'city': 'Cleveland', 'state': 'Ohio'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '52', 'city': 'Tampa', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '53', 'city': 'Bakersfield', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '54', 'city': 'Aurora', 'state': 'Colorado'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '55', 'city': 'Honolulu', 'state': 'Hawaii'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '56', 'city': 'Anaheim', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '57', 'city': 'Santa Ana', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '58', 'city': 'Corpus Christi', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '59', 'city': 'Riverside', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '60', 'city': 'Lexington', 'state': 'Kentucky'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '61', 'city': 'St. Louis', 'state': 'Missouri'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '62', 'city': 'Stockton', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '63', 'city': 'Pittsburgh', 'state': 'Pennsylvania'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '64', 'city': 'Saint Paul', 'state': 'Minnesota'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '65', 'city': 'Cincinnati', 'state': 'Ohio'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '66', 'city': 'Anchorage', 'state': 'Alaska'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '67', 'city': 'Henderson', 'state': 'Nevada'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '68', 'city': 'Greensboro', 'state': 'North Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '69', 'city': 'Plano', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '70', 'city': 'Newark', 'state': 'New Jersey'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '71', 'city': 'Lincoln', 'state': 'Nebraska'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '72', 'city': 'Toledo', 'state': 'Ohio'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '73', 'city': 'Orlando', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '74', 'city': 'Chula Vista', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '75', 'city': 'Irvine', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '76', 'city': 'Fort Wayne', 'state': 'Indiana'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '77', 'city': 'Jersey City', 'state': 'New Jersey'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '78', 'city': 'Durham', 'state': 'North Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '79', 'city': 'St. Petersburg', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '80', 'city': 'Laredo', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '81', 'city': 'Buffalo', 'state': 'New York'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '82', 'city': 'Madison', 'state': 'Wisconsin'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '83', 'city': 'Lubbock', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '84', 'city': 'Chandler', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '85', 'city': 'Scottsdale', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '86', 'city': 'Glendale', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '87', 'city': 'Reno', 'state': 'Nevada'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '88', 'city': 'Norfolk', 'state': 'Virginia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '89', 'city': 'Winston–Salem', 'state': 'North Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '90', 'city': 'North Las Vegas', 'state': 'Nevada'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '91', 'city': 'Irving', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '92', 'city': 'Chesapeake', 'state': 'Virginia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '93', 'city': 'Gilbert', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '94', 'city': 'Hialeah', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '95', 'city': 'Garland', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '96', 'city': 'Fremont', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '97', 'city': 'Baton Rouge', 'state': 'Louisiana'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '98', 'city': 'Richmond', 'state': 'Virginia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '99', 'city': 'Boise', 'state': 'Idaho'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '100', 'city': 'San Bernardino', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '101', 'city': 'Spokane', 'state': 'Washington'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '102', 'city': 'Des Moines', 'state': 'Iowa'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '103', 'city': 'Modesto', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '104', 'city': 'Birmingham', 'state': 'Alabama'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '105', 'city': 'Tacoma', 'state': 'Washington'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '106', 'city': 'Fontana', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '107', 'city': 'Rochester', 'state': 'New York'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '108', 'city': 'Oxnard', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '109', 'city': 'Moreno Valley', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '110', 'city': 'Fayetteville', 'state': 'North Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '111', 'city': 'Aurora', 'state': 'Illinois'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '112', 'city': 'Glendale', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '113', 'city': 'Yonkers', 'state': 'New York'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '114', 'city': 'Huntington Beach', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '115', 'city': 'Montgomery', 'state': 'Alabama'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '116', 'city': 'Amarillo', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '117', 'city': 'Little Rock', 'state': 'Arkansas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '118', 'city': 'Akron', 'state': 'Ohio'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '119', 'city': 'Columbus', 'state': 'Georgia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '120', 'city': 'Augusta', 'state': 'Georgia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '121', 'city': 'Grand Rapids', 'state': 'Michigan'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '122', 'city': 'Shreveport', 'state': 'Louisiana'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '123', 'city': 'Salt Lake City', 'state': 'Utah'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '124', 'city': 'Huntsville', 'state': 'Alabama'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '125', 'city': 'Mobile', 'state': 'Alabama'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '126', 'city': 'Tallahassee', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '127', 'city': 'Grand Prairie', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '128', 'city': 'Overland Park', 'state': 'Kansas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '129', 'city': 'Knoxville', 'state': 'Tennessee'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '130', 'city': 'Port St. Lucie', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '131', 'city': 'Worcester', 'state': 'Massachusetts'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '132', 'city': 'Brownsville', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '133', 'city': 'Tempe', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '134', 'city': 'Santa Clarita', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '135', 'city': 'Newport News', 'state': 'Virginia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '136', 'city': 'Cape Coral', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '137', 'city': 'Providence', 'state': 'Rhode Island'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '138', 'city': 'Fort Lauderdale', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '139', 'city': 'Chattanooga', 'state': 'Tennessee'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '140', 'city': 'Rancho Cucamonga', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '141', 'city': 'Oceanside', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '142', 'city': 'Santa Rosa', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '143', 'city': 'Garden Grove', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '144', 'city': 'Vancouver', 'state': 'Washington'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '145', 'city': 'Sioux Falls', 'state': 'South Dakota'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '146', 'city': 'Ontario', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '147', 'city': 'McKinney', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '148', 'city': 'Elk Grove', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '149', 'city': 'Jackson', 'state': 'Mississippi'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '150', 'city': 'Pembroke Pines', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '151', 'city': 'Salem', 'state': 'Oregon'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '152', 'city': 'Springfield', 'state': 'Missouri'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '153', 'city': 'Corona', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '154', 'city': 'Eugene', 'state': 'Oregon'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '155', 'city': 'Fort Collins', 'state': 'Colorado'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '156', 'city': 'Peoria', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '157', 'city': 'Frisco', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '158', 'city': 'Cary', 'state': 'North Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '159', 'city': 'Lancaster', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '160', 'city': 'Hayward', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '161', 'city': 'Palmdale', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '162', 'city': 'Salinas', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '163', 'city': 'Alexandria', 'state': 'Virginia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '164', 'city': 'Lakewood', 'state': 'Colorado'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '165', 'city': 'Springfield', 'state': 'Massachusetts'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '166', 'city': 'Pasadena', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '167', 'city': 'Sunnyvale', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '168', 'city': 'Macon', 'state': 'Georgia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '169', 'city': 'Pomona', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '170', 'city': 'Hollywood', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '171', 'city': 'Kansas City', 'state': 'Kansas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '172', 'city': 'Escondido', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '173', 'city': 'Clarksville', 'state': 'Tennessee'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '174', 'city': 'Joliet', 'state': 'Illinois'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '175', 'city': 'Rockford', 'state': 'Illinois'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '176', 'city': 'Torrance', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '177', 'city': 'Naperville', 'state': 'Illinois'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '178', 'city': 'Paterson', 'state': 'New Jersey'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '179', 'city': 'Savannah', 'state': 'Georgia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '180', 'city': 'Bridgeport', 'state': 'Connecticut'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '181', 'city': 'Mesquite', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '182', 'city': 'Killeen', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '183', 'city': 'Syracuse', 'state': 'New York'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '184', 'city': 'McAllen', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '185', 'city': 'Pasadena', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '186', 'city': 'Bellevue', 'state': 'Washington'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '187', 'city': 'Fullerton', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '188', 'city': 'Orange', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '189', 'city': 'Dayton', 'state': 'Ohio'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '190', 'city': 'Miramar', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '191', 'city': 'Thornton', 'state': 'Colorado'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '192', 'city': 'West Valley City', 'state': 'Utah'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '193', 'city': 'Olathe', 'state': 'Kansas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '194', 'city': 'Hampton', 'state': 'Virginia'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '195', 'city': 'Warren', 'state': 'Michigan'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '196', 'city': 'Midland', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '197', 'city': 'Waco', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '198', 'city': 'Charleston', 'state': 'South Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '199', 'city': 'Columbia', 'state': 'South Carolina'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '200', 'city': 'Denton', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '201', 'city': 'Carrollton', 'state': 'Texas'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '202', 'city': 'Surprise', 'state': 'Arizona'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '203', 'city': 'Roseville', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '204', 'city': 'Sterling Heights', 'state': 'Michigan'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '205', 'city': 'Murfreesboro', 'state': 'Tennessee'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '206', 'city': 'Gainesville', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '207', 'city': 'Cedar Rapids', 'state': 'Iowa'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '208', 'city': 'Visalia', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '209', 'city': 'Coral Springs', 'state': 'Florida'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '210', 'city': 'New Haven', 'state': 'Connecticut'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '211', 'city': 'Stamford', 'state': 'Connecticut'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '212', 'city': 'Thousand Oaks', 'state': 'California'}
+2018-03-07 18:11:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '213', 'city': 'Concord', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '214', 'city': 'Elizabeth', 'state': 'New Jersey'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '215', 'city': 'Lafayette', 'state': 'Louisiana'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '216', 'city': 'Kent', 'state': 'Washington'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '217', 'city': 'Topeka', 'state': 'Kansas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '218', 'city': 'Simi Valley', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '219', 'city': 'Santa Clara', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '220', 'city': 'Athens', 'state': 'Georgia'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '221', 'city': 'Hartford', 'state': 'Connecticut'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '222', 'city': 'Victorville', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '223', 'city': 'Abilene', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '224', 'city': 'Norman', 'state': 'Oklahoma'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '225', 'city': 'Vallejo', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '226', 'city': 'Berkeley', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '227', 'city': 'Round Rock', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '228', 'city': 'Ann Arbor', 'state': 'Michigan'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '229', 'city': 'Fargo', 'state': 'North Dakota'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '230', 'city': 'Columbia', 'state': 'Missouri'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '231', 'city': 'Allentown', 'state': 'Pennsylvania'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '232', 'city': 'Evansville', 'state': 'Indiana'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '233', 'city': 'Beaumont', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '234', 'city': 'Odessa', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '235', 'city': 'Wilmington', 'state': 'North Carolina'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '236', 'city': 'Arvada', 'state': 'Colorado'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '237', 'city': 'Independence', 'state': 'Missouri'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '238', 'city': 'Provo', 'state': 'Utah'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '239', 'city': 'Lansing', 'state': 'Michigan'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '240', 'city': 'El Monte', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '241', 'city': 'Springfield', 'state': 'Illinois'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '242', 'city': 'Fairfield', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '243', 'city': 'Clearwater', 'state': 'Florida'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '244', 'city': 'Peoria', 'state': 'Illinois'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '245', 'city': 'Rochester', 'state': 'Minnesota'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '246', 'city': 'Carlsbad', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '247', 'city': 'Westminster', 'state': 'Colorado'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '248', 'city': 'West Jordan', 'state': 'Utah'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '249', 'city': 'Pearland', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '250', 'city': 'Richardson', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '251', 'city': 'Downey', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '252', 'city': 'Miami Gardens', 'state': 'Florida'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '253', 'city': 'Temecula', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '254', 'city': 'Costa Mesa', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '255', 'city': 'College Station', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '256', 'city': 'Elgin', 'state': 'Illinois'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '257', 'city': 'Murrieta', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '258', 'city': 'Gresham', 'state': 'Oregon'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '259', 'city': 'High Point', 'state': 'North Carolina'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '260', 'city': 'Antioch', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '261', 'city': 'Inglewood', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '262', 'city': 'Cambridge', 'state': 'Massachusetts'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '263', 'city': 'Lowell', 'state': 'Massachusetts'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '264', 'city': 'Manchester', 'state': 'New Hampshire'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '265', 'city': 'Billings', 'state': 'Montana'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '266', 'city': 'Pueblo', 'state': 'Colorado'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '267', 'city': 'Palm Bay', 'state': 'Florida'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '268', 'city': 'Centennial', 'state': 'Colorado'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '269', 'city': 'Richmond', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '270', 'city': 'Ventura', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '271', 'city': 'Pompano Beach', 'state': 'Florida'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '272', 'city': 'North Charleston', 'state': 'South Carolina'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '273', 'city': 'Everett', 'state': 'Washington'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '274', 'city': 'Waterbury', 'state': 'Connecticut'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '275', 'city': 'West Palm Beach', 'state': 'Florida'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '276', 'city': 'Boulder', 'state': 'Colorado'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '277', 'city': 'West Covina', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '278', 'city': 'Broken Arrow', 'state': 'Oklahoma'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '279', 'city': 'Clovis', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '280', 'city': 'Daly City', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '281', 'city': 'Lakeland', 'state': 'Florida'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '282', 'city': 'Santa Maria', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '283', 'city': 'Norwalk', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '284', 'city': 'Sandy Springs', 'state': 'Georgia'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '285', 'city': 'Hillsboro', 'state': 'Oregon'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '286', 'city': 'Green Bay', 'state': 'Wisconsin'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '287', 'city': 'Tyler', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '288', 'city': 'Wichita Falls', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '289', 'city': 'Lewisville', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '290', 'city': 'Burbank', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '291', 'city': 'Greeley', 'state': 'Colorado'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '292', 'city': 'San Mateo', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '293', 'city': 'El Cajon', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '294', 'city': 'Jurupa Valley', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '295', 'city': 'Rialto', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '296', 'city': 'Davenport', 'state': 'Iowa'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '297', 'city': 'League City', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '298', 'city': 'Edison', 'state': 'New Jersey'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '299', 'city': 'Davie', 'state': 'Florida'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '300', 'city': 'Las Cruces', 'state': 'New Mexico'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '301', 'city': 'South Bend', 'state': 'Indiana'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '302', 'city': 'Vista', 'state': 'California'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '303', 'city': 'Woodbridge', 'state': 'New Jersey'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '304', 'city': 'Renton', 'state': 'Washington'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '305', 'city': 'Lakewood', 'state': 'New Jersey'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '306', 'city': 'San Angelo', 'state': 'Texas'}
+2018-03-07 18:11:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population>
+{'rank': '307', 'city': 'Clinton', 'state': 'Michigan'}
+2018-03-07 18:11:20 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-07 18:11:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 1153,
+ 'downloader/request_count': 4,
+ 'downloader/request_method_count/GET': 4,
+ 'downloader/response_bytes': 114131,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 2,
+ 'downloader/response_status_count/301': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 7, 12, 41, 20, 97097),
+ 'item_scraped_count': 307,
+ 'log_count/DEBUG': 312,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'response_received_count': 2,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2018, 3, 7, 12, 41, 17, 896971)}
+2018-03-07 18:11:20 [scrapy.core.engine] INFO: Spider closed (finished)

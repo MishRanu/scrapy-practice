@@ -1,0 +1,13 @@
+setup.py
+craiglist/__init__.py
+craiglist/items.py
+craiglist/middlewares.py
+craiglist/pipelines.py
+craiglist/settings.py
+craiglist/spiders/__init__.py
+craiglist/spiders/jobs.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
